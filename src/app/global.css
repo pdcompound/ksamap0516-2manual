@@ -1,0 +1,25 @@
+html, body{
+
+
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+.aboutContainer{
+    width: 80%;
+    margin-left: 10%;
+    height: 1000px;
+    background-color: #ffbaba;
+}
+
+.viewContainer{
+    position: fixed;
+    margin-left: 10%;
+    width: 90%;
+    background-color: #ffcbcb;
+    height: 100%;
+}
