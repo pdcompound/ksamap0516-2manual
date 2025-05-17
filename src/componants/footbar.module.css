@@ -1,8 +1,9 @@
 .footbar{
-    background-color: rgba(230, 230, 230);
+    background-color: rgb(234, 234, 234);
     display: flex;
     flex-direction: row;
     padding-top: 2%;
+    border-top: 2px rgb(200, 200, 200);
 }
 
 .footbar1{
