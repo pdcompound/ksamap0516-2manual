@@ -8,7 +8,7 @@ export default function Navbar(){
         <>
         <div className = {styles.navbar}>
             <div className = {styles.navbarLeft}>
-                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/next.svg" href = "/" width = "200" height = "30" />
+                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/ksamapLight.png" href = "/" width = "120" height = "28" />
                 <Link href = "/main/view" className = {styles.links}>View</Link>
                 <Link href = "/main/edit" className = {styles.links}>Edit</Link>
 

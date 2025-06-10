@@ -8,7 +8,7 @@ export default function Footbar(){
         <>
         <div className = {styles.footbar}>
             <div className = {styles.footbar1}>
-                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/next.svg" href = "/" width = "200" height = "30" />
+                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/ksamapLight.png" href = "/" width = "200" height = "46" />
                 <Link href = "/" className = {styles.ksamap}>
                     2025 ksamap.
                 </Link>

@@ -1,5 +1,6 @@
 .navbar{
     margin: 0;
+
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -24,6 +25,7 @@
 .navbarLeft{
     width: 30%;
     margin: 0;
+    margin-left: 2% !important;
     padding: 5px;
     height: auto;
     display: flex;
