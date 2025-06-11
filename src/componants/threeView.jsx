@@ -2,6 +2,7 @@
 
 import {useEffect, useRef} from 'react'
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 export default function ThreeView(){
     const containerRef = useRef(null);
@@ -15,10 +16,16 @@ export default function ThreeView(){
         const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
         camera.position.z = 14;
 
+
+
+
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(width, height);
         renderer.setPixelRatio(devicePixelRatio);
         container.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
 
         const boxGeometry1 = new THREE.BoxGeometry();
         const icoGeometry1 = new THREE.IcosahedronGeometry(6,1);
@@ -30,19 +37,22 @@ export default function ThreeView(){
 
 
 
-        //scene.add(cube1);
-        scene.add(ico1);
+        scene.add(cube1);
+        //scene.add(ico1);
 
 
 
         //scene.background = new THREE.Color(0x000000);
 
         const animate = () => {
+
+            /*
             ico1.rotation.x += 0.005;
             ico1.rotation.y += 0.003;
             ico1.rotation.z += 0.001;
+            */
 
-
+            controls.update();
 
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
