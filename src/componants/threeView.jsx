@@ -21,7 +21,7 @@ export default function ThreeView(){
         container.appendChild(renderer.domElement);
 
         const boxGeometry1 = new THREE.BoxGeometry();
-        const icoGeometry1 = new THREE.IcosahedronGeometry(6,2);
+        const icoGeometry1 = new THREE.IcosahedronGeometry(6,1);
 
         const material1  = new THREE.MeshNormalMaterial();
 
