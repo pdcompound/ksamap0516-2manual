@@ -8,7 +8,7 @@ export default function ThreeView(){
 
     useEffect(()=>{  //run side effects
         const container = containerRef.current;
-        const width = container.clientWidth;
+        const width = container.clientWidth*0.9;
         const height = container.clientHeight;
 
         const scene = new THREE.Scene()
@@ -17,6 +17,7 @@ export default function ThreeView(){
 
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(width, height);
+        renderer.setPixelRatio(devicePixelRatio);
         container.appendChild(renderer.domElement);
 
         const geometry1 = new THREE.BoxGeometry();
@@ -48,6 +49,6 @@ export default function ThreeView(){
     },[])
 
     return(
-        <div ref = {containerRef} style={{height:'100vh', width:'90vw', border: '0px solid red'}}/>
+        <div ref = {containerRef} style={{height:'100vh', width:'100vw', border: '0px solid red'}}/>
     )
 }
