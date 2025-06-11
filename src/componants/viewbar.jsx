@@ -8,7 +8,7 @@ export default function Viewbar(){
         <>
         <div className = {styles.viewbar}>
             <div className = {styles.viewbarTop}>
-                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/ksamapLight.png" href = "/about" width = "120" height = "28" />
+                <Image className = {styles.logoImage} alt = "ksamapLogo" src = "/ksamapLight.png" href = "/about" width = "100" height = "24" />
                 <div className = {styles.links}>View</div>
 
             </div>
