@@ -14,7 +14,7 @@ export default function ThreeView(){
 
         const scene = new THREE.Scene()
         const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
-        camera.position.z = 14;
+        camera.position.z = 3;
 
 
 
@@ -28,7 +28,7 @@ export default function ThreeView(){
         controls.enableDamping = true;
 
         const boxGeometry1 = new THREE.BoxGeometry();
-        const icoGeometry1 = new THREE.IcosahedronGeometry(6,1);
+        const icoGeometry1 = new THREE.IcosahedronGeometry(1,1);
 
         const material1  = new THREE.MeshNormalMaterial();
 
@@ -37,8 +37,8 @@ export default function ThreeView(){
 
 
 
-        scene.add(cube1);
-        //scene.add(ico1);
+        //scene.add(cube1);
+        scene.add(ico1);
 
 
 
