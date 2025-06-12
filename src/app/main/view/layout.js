@@ -5,7 +5,7 @@ export default function({children}) {
     return(
         <>
             <Viewbar></Viewbar>
-            <div className='viewContainer'>
+            <div className='viewContainer' style = {{zIndex: 10}}>
                 {children}
             </div>
         </>

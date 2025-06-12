@@ -64,6 +64,9 @@ export default function ThreeView(){
     },[])
 
     return(
-        <div ref = {containerRef} style={{height:'100vh', width:'100vw', border: '0px solid red'}}/>
-    )
+        <div>
+            <div ref = {containerRef} style={{height:'100vh', width:'100vw', border: '0px solid red', zIndex: 20}}/>
+
+        </div>
+            )
 }
