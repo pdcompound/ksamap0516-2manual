@@ -35,8 +35,6 @@ export default function ThreeView(){
         const cube1 = new THREE.Mesh(boxGeometry1, material1);
         const ico1 = new THREE.Mesh(icoGeometry1, material1);
 
-
-
         //scene.add(cube1);
         scene.add(ico1);
 
